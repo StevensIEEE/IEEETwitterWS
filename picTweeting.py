@@ -22,7 +22,8 @@ message = "Hello IEEE!"
 
 
 #Loads images from picture folder
-images = glob.glob("/home/iengel/projects/twitterAPI/tweetingDemo/1200px-IEEE_logo.png")
+images = glob.glob("1200px-IEEE_logo.png")
+#images = glob.glob("/home/iengel/projects/twitterAPI/tweetingDemo/1200px-IEEE_logo.png")
 
 #Opens most recent picture and tweets it
 if len(images) > 0:
