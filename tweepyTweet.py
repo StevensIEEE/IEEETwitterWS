@@ -20,10 +20,10 @@ message = "Hello IEEE!"
 
 #Calls update_status method in Tweepy and passes in your message
 
-#twitter.update_status(status=message)
+twitter.update_status(status=message)
 
 
 
-twitter.update_with_media('1200px-IEEE_logo.png', message)
+#twitter.update_with_media('1200px-IEEE_logo.png', message)
 
 print("Tweeted: %s" % message)
