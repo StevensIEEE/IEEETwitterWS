@@ -18,7 +18,7 @@ auth.set_access_token(access_token, access_token_secret)
 twitter = tweepy.API(auth)
 
 #Change message value to change tweet
-message = "Hello IEEE!!!!"
+message = "Hello IE!!!"
 
 #Calls update_status method in Tweepy and passes in your message
 twitter.update_status(status=message)
