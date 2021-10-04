@@ -34,9 +34,5 @@ for status in tweets:
 for media_file in media_files:
     wget.download(media_file)
 
-print(tweets[0].text)
 for tweet in tweets:
     print(tweet.text)
-
-followers = twitter.followers()[0].name
-print("My followers: {}".format(followers))
