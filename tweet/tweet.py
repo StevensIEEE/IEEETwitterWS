@@ -17,12 +17,13 @@ auth.set_access_token(access_token, access_token_secret)
 #Create object twitter of Twython and pass in keys
 twitter = tweepy.API(auth)
 
-message = "Hello IEEE!"
+#Change message value to change tweet
+message = "Hello IEEE!!!!"
 
 #Calls update_status method in Tweepy and passes in your message
-
 twitter.update_status(status=message)
 
-#twitter.update_with_media('1200px-IEEE_logo.png', message)
+#Uncomment this update status and comment other one to tweet out message with picture
+#twitter.update_status_with_media(status = message, filename ='1200px-IEEE_logo.png')
 
 print("Tweeted: %s" % message)

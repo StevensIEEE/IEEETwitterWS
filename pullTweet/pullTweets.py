@@ -9,7 +9,6 @@ from auth import (
     access_token_secret
 )
 
-
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
@@ -20,7 +19,7 @@ twitter = tweepy.API(auth)
 #timeline = twitter.home_timeline()
 #print(timeline)
 
-
+#Change screen_name= to whatever user you want
 tweets = twitter.user_timeline(screen_name='@memeadikt')
 
 #prints tweets for user specified
@@ -35,11 +34,9 @@ for status in tweets:
 for media_file in media_files:
     wget.download(media_file)
 
+print(tweets[0].text)
+for tweet in tweets:
+    print(tweet.text)
 
-
-#print(tweets[0].text)
-#for tweet in tweets:
-#    print(tweet.text)
-
-#followers = twitter.followers()[0].name
-#print("My followers: {}".format(followers))
+followers = twitter.followers()[0].name
+print("My followers: {}".format(followers))
